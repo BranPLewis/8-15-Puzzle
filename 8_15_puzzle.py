@@ -132,7 +132,7 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser(description="Solve the N-Puzzle with A* search.")
     parser.add_argument("domain", type=str, choices=["puzzle"], default="puzzle", help="The problem domain to solve (e.g., 'puzzle').")
     parser.add_argument("-H", "--heuristic", type=str, choices=["misplaced", "manhattan","weighted_manhattan", "zero"], default="manhattan", help="The heuristic function to use.")
-    parser.add_argument("-n", "--boards", type=int, default=3, help="The number of boards to solve from the predefined list.")
+    parser.add_argument("-n", "--number", type=int, default=3, help="The number of boards to solve from the predefined list.")
     parser.add_argument("-s", "--size", type=str, default="8", choices=["8","15"], help="The size of the puzzle board you want it to work on; 15 puzzle or 8 puzzle")
     args = parser.parse_args()
     # 2. Validate the domain
